@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: gray; */
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+}
+
+.container {
+    border-radius: 35px;
+    box-shadow: 6px 6px 10px gray;
+    background-color: rgb(245, 240, 240);
+    /* padding: 10%; */
+}
+
+.headerdiv {
+    background-color: green;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 60px;
+    /* border-radius: inherit inherit 0 0; */
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.navigationdiv {
+    color: white;
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sub-navigation {
+    display: flex;
+}
+
+.nav-items {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.nav-items:hover {
+    background-color: lightgray;
+    color: black;
+    text-decoration: underline;
+}
+
+.body-Content {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 70px;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.lftside-content {
+    flex: 30%;
+    background-color: lightgray;
+    padding: 3% 3% 2% 1.5%;
+}
+
+.imagebox {
+    background-color: gray;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.main-content {
+    flex: 70%;
+    background-color: white;
+    padding: 3% 1% 2% 1.5%
+}
+
+@media screen and (max-width:700px) {
+    .sub-navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+    .body-Content {
+        flex-direction: column;
+    }
+}
